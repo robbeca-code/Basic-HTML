@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<script src="https://kit.fontawesome.com/87271d9e16.js" crossorigin="anonymous"></script>
+	<link rel="stylesheet" href="./style.css"/>
+	<title>Twitter Header</title>
+</head>
+<body>
+	<!--이미지 로고가 있거나 제목이 있을 때 의미있게 header로 묶기-->
+	<header class="header">
+		<h1 class="header-title">
+			<!--이미지이지만, header의 제목이므로 h1으로 묶는다. 진짜 트위터에서 이렇게 사용함-->
+			<a href="https://twitter.com/">
+				<i class="fa fa-twitter"></i>
+			</a>
+		</h1>
+
+		<!--문서간의 이동을 할 수 있다면 nav 사용하기-->
+		<!--아무렇게나 이동할 수 있어서 global nevigation아라고 한다.-->
+		<nav class="nav">
+			<!--sectioning elments에 제목 1개는 꼭 들어가야함.-->
+			<h1 class="nav-title">menu or global navigation</h1>
+			<ul>
+				<li class="nav-menu" aria-lable="홈">
+					<a href="https://twitter.com/home" class="nav-item">
+						<i class="fa fa-home"></i>
+						<span>홈</span>
+					</a>
+				</li>
+				<li class="nav-menu" aria-label="검색 및 탐색">
+					<a href="https://twitter.com/home" class="nav-item">
+						<i class="fa fa-search"></i>
+						<span>탐색하기</span>
+					</a>
+				</li>
+				<li class="nav-menu" aria-label="알림 타임라인">
+					<a href="https://twitter.com/home" class="nav-item">
+						<i class="fa fa-bell"></i>
+						<span>알림</span>
+					</a>
+				</li>
+				<li class="nav-menu" aria-label="메뉴 항목 더보기">
+					<button type="button" class="nav-item nav-more">
+						<i class="fa fa-dot-circle-o"></i>
+						<span>more</span>
+					</button>
+					<div class="more-drop-menu">
+						<ul>
+							<li class="drop-item" aria-label="토픽보기">
+								<a href="#">
+									토픽
+								</a>
+							</li>
+							<li class="drop-item" aria-label="트위터 서클">
+								<a href="#">
+									Twitter 서클
+								</a>
+							</li>
+						</ul>
+						<ul>
+							<li class="drop-item" aria-label="크리에이터 스튜디오 들어가기">
+								<a href="#">
+									크리에이터 스튜디오
+								</a>
+							</li>
+							<li class="drop-item" aria-label="수익창출할 수 있는 도구">
+								<a href="#">
+									프로페셔널용 도구
+								</a>
+							</li>
+							<li class="drop-item" aria-label="환경설정 및 지원">
+								<a href="#">
+									설정 및 지원
+								</a>
+							</li>
+						</ul>
+					</div>
+				</li>
+			</ul>
+		</nav>
+		<button type="button" class="btn-twit" aria-label="트윗하기">트윗하기</button>
+	</header>
+
+	<script src="./js.js"></script>
+</body>
+</html>

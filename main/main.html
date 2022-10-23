@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="./style.css"/>
+	<script src="https://kit.fontawesome.com/04dd8df0d5.js" crossorigin="anonymous"></script>
+	<title>Twitter main</title>
+</head>
+<body>
+	<main>
+		<!-- main의 header 부분-->
+		<header>
+			<div class="main-title">
+				<h1>홈</h1>
+				<button type="button">
+					<i class="fa-solid fa-star"></i>
+				</button>
+			</div>
+			
+			<div class="drop-down">
+				<h2>홈에서는 인기 트윗부터 보입니다</h2>
+				<button type="button">
+					<!-- Icon -->
+					<div class="contents">
+						<strong>최신 트윗 보기</strong>
+						<span>올라오는 순서대로 트윗이 표시됩니다</span>
+					</div>
+				</button>
+				<a href="#">
+					<!-- Icon -->
+					<strong>콘텐츠 환경설정 보기</strong>
+				</a>
+			</div>
+		</header>
+
+		<!--main의 section 부분-->
+		<section>
+			<h1 class="hidden">트윗 쓰기</h1>
+
+			<form action="#" method="POST">
+				<div class="row-container">
+					<div class="image-container">
+						<img src="https://res.cloudinary.com/diqqf3eq2/image/upload/v1586883409/person-2_np9x5l.jpg"
+						class="user-img" alt="@김익명"/>
+					</div>
+					<div class="col-container">
+						<textarea placeholder="무슨 일이 일어나고 있나요?" class="write-tweet" maxlength="280"></textarea>
+						<div class="toolBar">
+							<div class="toolBar-left">
+								<button type="button" class="add-media" onclick="onClickUpload()" aria-label="사진 또는 동영상 추가">
+									<i class="fa-solid fa-image"></i>
+								</button>
+								<input type="file" class="media-input" multiple accept="image/*, video/*"/>
+								<!--
+									<input type="file" multiple accept=".png, .jpg"/>
+								-->
+								<button type="button" class="add-vote" aria-label="투표 추가">
+									<i class="fa fa-list-ul"></i>
+								</button>
+			
+								<button type="button" class="add-emoji" aria-label="이모티콘 추가">
+									<i class="fa fa-smile-o"></i>
+								</button>
+							</div>
+							
+							<div class="toolBar-right">
+								<strong aria-label="280자 중 2자 쓰는중" class="max-char">
+									<i class="fa fa-circle-thin"></i>
+								</strong>
+								<div class="bar"></div>
+								<button type="button" class="add-tweet" aria-label="트윗 추가하기">
+									<!-- <i class="fa-light fa-plus"></i> -->
+									<i class="fa fa-plus-circle"></i>
+								</button>
+								<button type="button" class="tweet" aria-label="트윗 올리기">
+									<span>트윗하기</span>
+								</button>
+							</div>
+						</div>
+					</div>
+					
+				</div>
+				
+			</form>
+		</section>
+
+
+		<section class="time-line">
+			<h1 class="hidden">내 홈 타임라인</h1>
+			<ul>
+				<li>
+					<article>
+						<h1 class="hidden">A tweet from 김익명</h1>
+						<header>
+							<div>
+								<a href="#">
+									<img src="#" alt="김익명 프로필 사진"/>
+								</a>
+								<h1>김익명</h1>
+								<strong>@anonymouskim</strong>
+								<span>10월 19일</span>
+							</div>
+							<button type="button">
+								<!-- Icon -->
+							</button>
+						</header>
+						<span>
+							영어를 더 잘 하고싶다. 그러나 공부를 하고 싶지는 않다.
+							내 삶의 모든 것이 이런 식으로 망해왔다.
+						</span>
+						<footer>
+							<button type="button">
+								<span class="hidden">댓글 쓰기</span>
+								<!-- Icon-->
+								<strong>3</strong>
+							</button>
+							<button type="button">
+								<span class="hidden">리트윗 하기</span>
+								<!-- Icon-->
+								<strong>3</strong>
+							</button>
+							<button type="button">
+								<span class="hidden">좋아요 누르기</span>
+								<!-- Icon-->
+								<strong>3</strong>
+							</button>
+							<button type="button">
+								<span class="hidden">트윗 공유하기</span>
+								<!-- Icon-->
+								<strong>3</strong>
+							</button>
+						</footer>
+					</article>
+				</li>
+			</ul>
+		</section>
+		<script src="./js.js"></script>
+	</main>
+</body>
+</html>

@@ -1,7 +1,22 @@
-var more = document.querySelector('.nav-more');
-var dropMenu = document.querySelector('.more-drop-menu');
-var navItem = document.querySelector('.nav-item');
+const more = document.querySelector('.nav-more');
+const dropMenu = document.querySelector('.more-drop-menu');
+const tweetBtn = document.querySelector('.btn-tweet');
+const closeBtn = document.querySelector('.close');
+const modal = document.querySelector('.modal-container');
 
 more.addEventListener('click', function(e){
-	dropMenu.style.display = 'inline-block';
+	dropMenu.classList.toggle('show-menu');
 });
+
+tweetBtn.addEventListener('click', function(){
+	modal.classList.add('show-modal');
+});
+
+closeBtn.addEventListener('click', function(){
+  modal.classList.remove('show-modal');
+});
+
+function onClickUpload() {
+	const mediaInput = document.querySelector('.media-input');
+	mediaInput.click();
+}

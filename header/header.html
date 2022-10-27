@@ -4,7 +4,7 @@
 	<meta charset="UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<script src="https://kit.fontawesome.com/87271d9e16.js" crossorigin="anonymous"></script>
+	<script src="https://kit.fontawesome.com/04dd8df0d5.js" crossorigin="anonymous"></script>
 	<link rel="stylesheet" href="./style.css"/>
 	<title>Twitter Header</title>
 </head>
@@ -81,7 +81,48 @@
 				</li>
 			</ul>
 		</nav>
-		<button type="button" class="btn-twit" aria-label="트윗하기">트윗하기</button>
+		<button type="button" class="btn-tweet" aria-label="트윗하기">트윗하기</button>
+		
+		<aside class="modal-container">
+			<div class="modal-tweet">
+				<button type="button" class="close">
+					<i class="fa-solid fa-xmark"></i>
+				</button>
+				<div class="row-container">
+					<div class="user-img-container">
+						<img src="./assets/user-img.png" class="user-img" alt="사용자"/>
+					</div>
+					<div class="col-container">
+						<textarea placeholder="무슨 일이 일어나고 있나요?" class="write-tweet"></textarea>
+						<div class="toolbar-container">
+							<div class="toolbar-left">
+								<button type="button" class="add-media" onclick="onClickUpload()" aria-label="사진 또는 동영상 추가">
+									<i class="fa-solid fa-image"></i>
+								</button>
+								<input type="file" class="media-input" multiple accept="image/*, video/*"/>
+								<!--
+									<input type="file" multiple accept=".png, .jpg"/>
+								-->
+								<button type="button" class="add-vote" aria-label="투표 추가">
+									<i class="fa fa-list-ul"></i>
+								</button>
+			
+								<button type="button" class="add-emoji" aria-label="이모티콘 추가">
+									<i class="fa fa-smile-o"></i>
+								</button>
+							</div>
+							<div class="toolbar-right">
+								<button type="button" class="modal-tweet-btn">
+									트윗하기
+								</button>
+							</div>
+						</div>
+					</div>
+				</div>
+				
+			</div>
+			
+		</aside>
 	</header>
 
 	<script src="./js.js"></script>

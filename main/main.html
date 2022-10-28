@@ -14,7 +14,7 @@
 		<header>
 			<div class="main-title">
 				<h1>홈</h1>
-				<button type="button">
+				<button type="button" class="menu">
 					<i class="fa-solid fa-star"></i>
 				</button>
 			</div>
@@ -36,7 +36,7 @@
 		</header>
 
 		<!--main의 section 부분-->
-		<section>
+		<section class="write-tweet-container">
 			<h1 class="hidden">트윗 쓰기</h1>
 
 			<form action="#" method="POST">
@@ -94,42 +94,50 @@
 					<article>
 						<h1 class="hidden">A tweet from 김익명</h1>
 						<header>
-							<div>
-								<a href="#">
-									<img src="#" alt="김익명 프로필 사진"/>
-								</a>
-								<h1>김익명</h1>
-								<strong>@anonymouskim</strong>
-								<span>10월 19일</span>
+							<div class="time-line-header">
+								<div class="header-info">
+									<div class="image-container">
+										<a href="#">
+											<img src="./assets/user-img.png" class="user-img" alt="김익명 프로필 사진"/>
+										</a>
+									</div>
+									<h1 class="user-name">김익명</h1>
+									<strong class="user-info">@anonymouskim ·</strong>
+									<span class="user-info">&nbsp;10월 19일</span>
+								</div>
+								
+								<button type="button" class="menu">
+									<i class="fa-solid fa-ellipsis"></i>
+								</button>
 							</div>
-							<button type="button">
-								<!-- Icon -->
-							</button>
 						</header>
-						<span>
-							영어를 더 잘 하고싶다. 그러나 공부를 하고 싶지는 않다.
-							내 삶의 모든 것이 이런 식으로 망해왔다.
-						</span>
-						<footer>
-							<button type="button">
+						<div class="time-line-text">
+							<span>
+								영어를 더 잘 하고싶다.<br/>
+								그러나 공부를 하고 싶지는 않다.<br/>
+								내 삶의 모든 것이 이런 식으로 망해왔다.
+							</span>
+						</div>
+						
+						<footer class="time-line-footer">
+							<button type="button" class="icon">
 								<span class="hidden">댓글 쓰기</span>
-								<!-- Icon-->
+								<i class="fa-regular fa-comment"></i>
 								<strong>3</strong>
 							</button>
-							<button type="button">
+							<button type="button" class="icon">
 								<span class="hidden">리트윗 하기</span>
-								<!-- Icon-->
+								<i class="fa-solid fa-retweet"></i>
 								<strong>3</strong>
 							</button>
-							<button type="button">
+							<button type="button" class="icon">
 								<span class="hidden">좋아요 누르기</span>
-								<!-- Icon-->
+								<i class="fa-regular fa-heart"></i>
 								<strong>3</strong>
 							</button>
-							<button type="button">
+							<button type="button" class="icon">
 								<span class="hidden">트윗 공유하기</span>
-								<!-- Icon-->
-								<strong>3</strong>
+								<i class="fa-solid fa-arrow-up-from-bracket"></i>
 							</button>
 						</footer>
 					</article>

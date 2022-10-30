@@ -52,12 +52,71 @@ main {
 }
 
 .drop-down {
-	height: 0;
+  position: relative;
+  width: 20rem;
+  top: 0;
+  left: 25rem;
+  height: 0;
 	overflow: hidden;
+  z-index: 999;
 }
 
 .show-drop-down {
-	height: 10rem;
+	height: 14rem;
+  border: 1px solid #545454;
+  border-radius: 12px;
+}
+
+.drop-down-img {
+  display: block;
+  height: 5rem;
+  margin: 0 auto;
+}
+
+.drop-down .title {
+  text-align: center;
+  font-size: 1.2rem;
+  font-weight: bold;
+  border-bottom: 1px solid #545454;
+  padding-bottom: 0.5rem;
+}
+
+.drop-menu-first {
+  display: flex;
+  align-items: center;
+  margin-top: 0.7rem;
+  margin-bottom: 1.2rem;
+  padding-left: 1rem;
+}
+
+.drop-menu-first i {
+  font-size: 1rem;
+  margin-right: 0.7rem;
+}
+
+.drop-menu-first span {
+  font-size: 0.8rem;
+}
+
+.drop-btn {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  font-size: 1rem;
+}
+
+.drop-menu-second {
+  color: #171717;
+  padding-left: 1rem;
+}
+
+.drop-menu-second i {
+  font-size: 1rem;
+  margin-right: 0.6rem;
+}
+
+.setting-title {
+  font-size: 1rem;
 }
 
 
